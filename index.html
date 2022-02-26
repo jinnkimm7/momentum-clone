@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momentum App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header">
+    <!-- reset -->
+    <button id="reset">reset</button>
+    <!-- refresh -->
+    <button id="refresh">refresh</button>
+    <!-- weather -->
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- clock -->
+  <div class="inner">
+    <h2 id="clock"></h2>
+  </div>
+  <!-- greeting -->
+  <div class="inner">
+    <form id="login-form" class="hidden">
+      <input required maxlength="15" type="text" placeholder="What is your name?" />
+      <input type="submit" value="Log In" />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+  </div>
+  <!-- todo list -->
+  <div class="inner">
+    <div id="todo-box">
+      <form id="todo-form">
+        <input type="text" size="27" placeholder="Write a To Do and Press enter." required />
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+  </div>
+  <!-- quote -->
+  <div class="inner">
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <script defer src="js/greeting.js"></script>
+  <script defer src="js/clock.js"></script>
+  <script defer src="js/quotes.js"></script>
+  <script defer src="js/background.js"></script>
+  <script defer src="js/todo.js"></script>
+  <script defer src="js/weather.js"></script>
+  <script src="js/refresh.js"></script>
+  <script src="js/reset.js"></script>
+</body>
+
+</html>
